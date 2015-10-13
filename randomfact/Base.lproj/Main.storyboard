@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
@@ -22,32 +23,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to FactBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guq-3N-c0Y">
-                                <rect key="frame" x="20" y="20" width="335" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to FactBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guq-3N-c0Y">
+                                <rect key="frame" x="33" y="40" width="309" height="48"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="o0B-2D-7Nf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.97974234819412231" green="0.26550725102424622" blue="0.007664497010409832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99115508794784546" green="0.97277981042861938" blue="0.96790927648544312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbf-KO-9xe">
-                                <rect key="frame" x="20" y="93" width="335" height="131"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5d-Gj-J14">
+                                <rect key="frame" x="90" y="548" width="195" height="54"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5d-Gj-J14">
-                                <rect key="frame" x="94" y="312" width="187" height="54"/>
-                                <animations/>
+                                <color key="backgroundColor" red="0.99115508794784546" green="0.97277981042861938" blue="0.96790927648544312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Akf-Ea-1TM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="NDx-Mj-oex"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <color key="tintColor" red="0.16470588235294117" green="0.71372549019607845" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Get My Fact"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Akf-Ea-1TM"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="showNewFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CxC-c9-I3m"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Awesome Fact would be displayed here!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbf-KO-9xe">
+                                <rect key="frame" x="35" y="309" width="304" height="49"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Did you know??&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvs-04-Ed0">
+                                <rect key="frame" x="120" y="108" width="134" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99115508794784546" green="0.97277981042861938" blue="0.96790927648544312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.99115508794784546" green="0.97277981042861938" blue="0.96790927648544312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18349021673202515" green="0.78138399124145508" blue="0.53181004524230957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kvs-04-Ed0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Q8-hS-wmz"/>
+                            <constraint firstItem="Qbf-KO-9xe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="9nD-cg-KQq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j5d-Gj-J14" secondAttribute="trailing" constant="74" id="Bxg-qE-Rj7"/>
+                            <constraint firstItem="guq-3N-c0Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Dhy-l8-wAG"/>
+                            <constraint firstItem="guq-3N-c0Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fp8-oO-tQW"/>
+                            <constraint firstItem="Kvs-04-Ed0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HEZ-dw-tkt"/>
+                            <constraint firstItem="Qbf-KO-9xe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L1k-WH-7QV"/>
+                            <constraint firstItem="Qbf-KO-9xe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PDH-O0-rfY"/>
+                            <constraint firstItem="Qbf-KO-9xe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V4s-1f-FTE"/>
+                            <constraint firstItem="Qbf-KO-9xe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xrh-Yb-WBN"/>
+                            <constraint firstItem="Kvs-04-Ed0" firstAttribute="top" secondItem="guq-3N-c0Y" secondAttribute="bottom" constant="20" id="Xsg-vW-0sM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j5d-Gj-J14" secondAttribute="bottom" constant="65" id="gck-bz-0HF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qbf-KO-9xe" secondAttribute="trailing" constant="20" id="jVi-Wi-NQg"/>
+                            <constraint firstItem="Kvs-04-Ed0" firstAttribute="top" secondItem="guq-3N-c0Y" secondAttribute="bottom" constant="20" id="je4-rr-tTK"/>
+                            <constraint firstItem="j5d-Gj-J14" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="ttX-zL-pOP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HEZ-dw-tkt"/>
+                                <exclude reference="je4-rr-tTK"/>
+                                <exclude reference="L1k-WH-7QV"/>
+                                <exclude reference="V4s-1f-FTE"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
