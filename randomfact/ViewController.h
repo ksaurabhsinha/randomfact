@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class Factbook;
+@class Colorbook;
 
 @interface ViewController : UIViewController
 
@@ -16,8 +17,11 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *factLabel;
 
-@property (strong,atomic) Factbook *objFactBook;
+@property (strong, nonatomic) Factbook *objFactBook;
 
+@property (strong, nonatomic) Colorbook *objColorBook;
+
+@property (strong, nonatomic) IBOutlet UIButton *buttonShowFact;
 
 @end
 

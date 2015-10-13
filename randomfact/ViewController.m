@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Factbook.h"
+#import "Colorbook.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,13 @@
 
     //Initialize the Factbook
     self.objFactBook = [[Factbook alloc] init];
+    //Initialize the Colorbook
+    self.objColorBook = [[Colorbook alloc] init];
+    
+    //Get Random Color each time a new fact is shown
+    UIColor *newRandomColor = [self.objColorBook getRandomColor];
+    self.buttonShowFact.tintColor = newRandomColor;
+    self.view.backgroundColor = newRandomColor;
     
     //Get a Random Fact on View Load
     self.factLabel.text = [self.objFactBook getRandomFact];
@@ -32,6 +40,12 @@
 }
 
 - (IBAction)showNewFact:(id)sender {
+    
+    //Get Random Color each time a new fact is shown
+    UIColor *newRandomColor = [self.objColorBook getRandomColor];
+    self.buttonShowFact.tintColor = newRandomColor;
+    self.view.backgroundColor = newRandomColor;
+    
     //Get the random fact on button touch
     self.factLabel.text = [self.objFactBook getRandomFact];
 }

@@ -1,5 +1,5 @@
 //
-//  Factbook.h
+//  Colorbook.h
 //  randomfact
 //
 //  Created by Kumar Saurabh Sinha on 13/10/15.
@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface Factbook : NSObject
+@interface Colorbook : NSObject
 
-@property (strong, nonatomic) NSArray *factArray;
+@property (strong, nonatomic) NSArray *colorArray;
 
-- (NSString *) getRandomFact;
+- (UIColor *) getRandomColor;
 
 @end

@@ -98,6 +98,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="buttonShowFact" destination="j5d-Gj-J14" id="wf9-5L-vSo"/>
                         <outlet property="factLabel" destination="Qbf-KO-9xe" id="E29-q3-oPY"/>
                     </connections>
                 </viewController>

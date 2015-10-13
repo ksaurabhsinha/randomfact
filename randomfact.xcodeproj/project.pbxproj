@@ -14,6 +14,7 @@
 		F11616931BCCC8F700258C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11616921BCCC8F700258C3A /* Assets.xcassets */; };
 		F11616961BCCC8F700258C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11616941BCCC8F700258C3A /* LaunchScreen.storyboard */; };
 		F116169F1BCCD02F00258C3A /* Factbook.m in Sources */ = {isa = PBXBuildFile; fileRef = F116169E1BCCD02F00258C3A /* Factbook.m */; };
+		F135040A1BCCF144006CE4CC /* Colorbook.m in Sources */ = {isa = PBXBuildFile; fileRef = F13504091BCCF144006CE4CC /* Colorbook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		F11616971BCCC8F700258C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F116169D1BCCD02F00258C3A /* Factbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factbook.h; sourceTree = "<group>"; };
 		F116169E1BCCD02F00258C3A /* Factbook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factbook.m; sourceTree = "<group>"; };
+		F13504081BCCF144006CE4CC /* Colorbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colorbook.h; sourceTree = "<group>"; };
+		F13504091BCCF144006CE4CC /* Colorbook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colorbook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				F116168D1BCCC8F700258C3A /* ViewController.m */,
 				F116169D1BCCD02F00258C3A /* Factbook.h */,
 				F116169E1BCCD02F00258C3A /* Factbook.m */,
+				F13504081BCCF144006CE4CC /* Colorbook.h */,
+				F13504091BCCF144006CE4CC /* Colorbook.m */,
 				F116168F1BCCC8F700258C3A /* Main.storyboard */,
 				F11616921BCCC8F700258C3A /* Assets.xcassets */,
 				F11616941BCCC8F700258C3A /* LaunchScreen.storyboard */,
@@ -157,6 +162,7 @@
 				F116168E1BCCC8F700258C3A /* ViewController.m in Sources */,
 				F116168B1BCCC8F700258C3A /* AppDelegate.m in Sources */,
 				F116169F1BCCD02F00258C3A /* Factbook.m in Sources */,
+				F135040A1BCCF144006CE4CC /* Colorbook.m in Sources */,
 				F11616881BCCC8F700258C3A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +310,7 @@
 				F116169C1BCCC8F700258C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
